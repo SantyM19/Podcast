@@ -1,0 +1,517 @@
+/*Variables*/
+:root {
+  --color: #0000FF;
+  --hover:linear-gradient(225deg, #0000FF 0%, cyan 100%);
+}
+
+body{
+  width: 100%;
+  margin: 0px;
+  display: block;
+  position: relative;
+}
+
+/*nav*/
+.menu {
+  font-family: 'IBM Plex Sans', sans-serif;
+  display: block;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  width: 100%;
+}
+
+.menu input[type="checkbox"], .menu .fa-bars, .menu .fa-times {
+  position: absolute;  
+  margin: 0;
+  padding: 0;
+  right: 4%;
+  top: 5%;
+  width: 30px;
+  height: 30px;  
+}
+
+.head{ 
+  display: block;
+  padding: 1% 4%;
+}
+
+.logo{
+  width: 30px;
+  height: 30px;
+}
+
+/*menu amburguesa*/
+.menu .fa-bars, .menu .fa-times {
+  font-size: 30px;
+  pointer-events: none;
+}
+ 
+.menu input[type="checkbox"] {
+  opacity: 0; 
+}   
+.menu nav {
+  display: none;
+}
+ 
+.menu input:checked ~ nav {
+  display: block;
+}
+ 
+.menu input:checked ~ .fa-bars {
+  display: none;
+}
+ 
+.menu input:not(:checked) ~ .fa-times {
+  display: none;
+}
+/*end burguermenu*/
+
+.item{
+  width: 100%;
+  background-color: var(--color);
+}
+
+.a {
+  display: block;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  padding:1% 0%;
+}
+
+.a:hover {
+  color:#00F3BB;
+  text-decoration: line-through;
+}
+
+.a:active {
+  color:gray;
+  text-decoration: line-through;
+}
+
+/*cuerpo*/
+.cuerpo{
+  display: block;
+  width: 100%;
+}
+/*begin*/
+.begin{
+  padding:0% 4%;
+}
+
+h1{
+  width: 200px;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+span{
+  text-decoration: line-through;
+}
+
+p{
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.p1{
+  display: block;
+  text-justify: auto;
+}
+.p2{
+  display: none;
+}
+
+button{
+  font-family: 'IBM Plex Mono', monospace;
+  margin-top: 4%;
+  margin-bottom: 6%;
+  border-style: none;
+  background-color:  #00F3BB;
+  width: 220px;
+  height: 40px;
+}
+
+button:hover{
+  background-image: var(--hover);
+}
+
+/*Episodios*/
+.episodios{
+  position: static;
+  transform: skew(0deg, -5deg);
+  padding: 0% 4%;
+  background-color: var(--color);
+  padding-top: 5%;
+  padding-bottom: 15%;
+}
+
+h2{
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.h2{
+  transform: skew(0deg, 5deg);
+  padding-top: 3%;
+  color: white;
+}
+
+.epi{
+  transform: skew(0deg, 5deg);
+  margin-bottom: 5%;
+}
+
+.figure{
+  margin: 0%;
+  margin-top: 1%;
+}
+
+/*nosotros*/
+.nosotros{
+  padding: 0% 4%;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  position: relative;
+  top: -80px;
+}
+
+.phonei{
+  width: 100%;
+}
+
+.tit{
+  color: black;
+  width: 140px;
+  text-align: left;
+}
+
+.nos{
+  text-align: left;
+}
+
+/*invitados*/
+.entrevistas{
+  display: inline-block;
+  margin-top: -20%;
+}
+
+.tit1{
+  margin: 3% 4%;
+  width: 150px;
+  color: black;
+}
+
+.invitados{
+  font-size: 0px;
+  line-height: 0px;
+}
+
+.inv{
+  display: block;
+  width: 100%;
+  margin: 0px;
+}
+
+/*topicos*/
+.topicos{
+  display: flex;
+  flex-direction: column;
+}
+
+.tit3{
+  color: black;
+  margin: 3% 4%;
+  width: 200px;
+}
+
+.topics{
+  margin: 2% 4%;
+  display: flex;
+  flex-direction: column;
+}
+
+.topic{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  padding: 2%;
+}
+
+h3{
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+/*footer*/
+.foot{
+  margin-top: 1%;
+  transform: skewy(-5deg);
+  background-color: var(--color);
+  position: relative;
+  display: block;
+}
+
+.novedades{
+  transform: skew(0deg, 5deg);
+  text-align: center;
+  padding: 3% 4% 3% 4%;
+}
+
+.nove{
+  margin: auto;
+  width: 200px;
+  color: white;
+}
+
+
+/*footer*/
+footer {
+  background-color: white;
+  text-align: center;
+  position:absolute;
+  margin-top: -5%;
+  width: 100%;
+}
+
+.copy{
+  width: 100%;
+}
+
+.rede{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 2%;
+}
+
+.aa{
+  width: 5%;
+  display: inline-block;
+}
+
+.fab{
+  color: #060A24 ;
+}
+
+@media (min-width: 600px) and (max-width:900px){
+  .p1{
+    display: none;
+  }
+  .p2{
+    display: block;
+    width: 600px;
+  }
+  
+  /*invitados*/
+  .inv{
+    display: inline-block;
+    width: 50%
+  }
+
+  /*topicos*/
+
+  .tit3{
+    width: 85%;
+  }
+
+  .topics{
+    flex-direction: row;
+  }
+
+  .topic{
+    width: 50%;
+  }
+
+  .novedades{
+    padding: 4% 4% 4% 4%;
+  }
+
+  .nove{
+    width: 300px;
+    padding: 0%;
+  }
+
+  .entrevistas{
+    margin-top: -10%;
+  }
+
+}
+
+@media (min-width: 901px) {
+  
+  .menu {
+    width: 100%;
+    display: block;
+  }
+  .head{
+    width: 45%;
+    padding-left: 5%;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .menu input:checked ~ nav {
+    display: inline-block;
+  }
+
+  input{
+    display: none;
+  }
+  .menu .fa-bars, .menu .fa-times {
+    display: none;
+  }
+  .menu nav{
+    display: inline-block;
+    width: 45%;
+  }
+  .item{
+    width: 24%;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: white;
+  }  
+  .a{
+    background-color: white;
+  }
+
+  /*begin*/
+  .begin{
+    margin-top: 3%;
+    padding:1% 10%;
+  }
+  h1{
+    width: 75%;
+  }
+
+  .p1{
+    display: none;
+  }
+  .p2{
+    display: block;
+    width: 600px;
+  }
+
+  /*episodios*/
+
+  .episodios{
+    display: flex;
+    flex-direction: column;
+    padding: 0% 5%;
+    padding-top: 5%;
+    padding-bottom: 15%;
+  }
+  
+  h2{
+    padding-top: 3%;
+    padding-left: 5%;
+    color: white;
+  }
+
+  .epi{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+  }
+
+  .figure{
+    width: 48%;
+    padding: 0% 1%;
+  }
+
+  /*nosotros*/
+  .nosotros{
+    flex-direction: row;
+    padding: 0% 12%;
+    top: -150px;
+  }
+
+  .imgcell{
+    width: 50%;
+  }
+
+  .nosot{
+    padding-top: 20%;
+    padding-bottom: 20%;
+    width: 50%;
+  }
+
+  .phone{
+    width: 80%;
+  }
+
+  .tit{
+    width: 300px;
+  }
+
+  .nos{
+    padding: 0% 5%;
+  }
+
+  /*invitados*/
+
+ 
+  
+  .tit1{
+    width: 85%;
+  }
+  
+  .inv{
+    display: inline-block;
+    width: 33.33%
+  }
+
+  /*topicos*/
+
+  .tit3{
+    width: 85%;
+  }
+
+  .topics{
+    flex-direction: row;
+  }
+
+  .topic{
+    width: 25%;
+  }
+
+  /*NOVEDADES*/
+
+  .novedades{
+    padding: 4% 4% 2% 4%;
+  }
+  .nove{
+    width: 500px;
+    padding: 0%;
+  }
+
+
+  footer {
+    padding: 1% 5%;
+    width: 90%;
+    height: 100px;
+    margin-top: -5%;
+  }
+
+  .copy{
+    display: inline-block;
+    width: 70%;
+    text-align: left;
+    margin-top: 40px;
+  }
+
+  .rede{
+    display: inline-block;
+    width: 20%;
+    padding-top: 1em;
+    margin: auto;
+    margin-top: 40px;
+  }
+  
+  .aa{
+    margin: 0px 4% 0px 4%;
+    width: 1em;
+  }
+
+}
+
