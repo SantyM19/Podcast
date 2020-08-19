@@ -1,6 +1,5 @@
-
 @media (min-width: 901px) {
-  
+  /*Nav*/
     .menu {
       width: 100%;
       display: block;
@@ -11,6 +10,8 @@
       display: inline-block;
       vertical-align: middle;
     }
+
+  /*Burguer Menu*/
   
     .menu input:checked ~ nav {
       display: inline-block;
@@ -26,6 +27,8 @@
       display: inline-block;
       width: 45%;
     }
+    /*End BurguerMenu*/
+
     .item{
       width: 24%;
       display: inline-block;
@@ -36,7 +39,7 @@
       background-color: white;
     }
   
-    /*begin*/
+  /*Begin*/
     .begin{
       margin-top: 3%;
       padding:1% 10%;
@@ -53,7 +56,7 @@
       width: 600px;
     }
   
-    /*episodios*/
+  /*Episodes*/
   
     .episodios{
       display: flex;
@@ -80,7 +83,7 @@
       padding: 0% 1%;
     }
   
-    /*nosotros*/
+  /*Us*/
     .nosotros{
       flex-direction: row;
       padding: 0% 12%;
@@ -109,10 +112,8 @@
       padding: 0% 5%;
     }
   
-    /*invitados*/
-  
-   
-    
+  /*Guests*/
+
     .tit1{
       width: 85%;
     }
@@ -122,7 +123,7 @@
       width: 33.33%
     }
   
-    /*topicos*/
+  /*Topics*/
   
     .tit3{
       width: 85%;
@@ -136,7 +137,7 @@
       width: 25%;
     }
   
-    /*NOVEDADES*/
+  /*News*/
   
     .novedades{
       padding: 4% 4% 2% 4%;
@@ -145,7 +146,8 @@
       width: 500px;
       padding: 0%;
     }
-  
+
+  /*Footer*/
   
     footer {
       padding: 1% 5%;
