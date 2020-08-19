@@ -1,4 +1,5 @@
 @media (min-width: 600px) and (max-width:900px){
+    /*Body*/
     .p1{
       display: none;
     }
@@ -7,13 +8,17 @@
       width: 600px;
     }
     
-    /*invitados*/
+    /*Guests*/
+    .entrevistas{
+      margin-top: -10%;
+    }
+
     .inv{
       display: inline-block;
       width: 50%
     }
   
-    /*topicos*/
+    /*Topics*/
   
     .tit3{
       width: 85%;
@@ -26,6 +31,8 @@
     .topic{
       width: 50%;
     }
+
+    /*Foot*/
   
     .novedades{
       padding: 4% 4% 4% 4%;
@@ -34,10 +41,6 @@
     .nove{
       width: 300px;
       padding: 0%;
-    }
-  
-    .entrevistas{
-      margin-top: -10%;
     }
   
   }
