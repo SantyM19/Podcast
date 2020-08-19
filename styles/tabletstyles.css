@@ -1,5 +1,7 @@
 @media (min-width: 600px) and (max-width:900px){
-    /*Body*/
+  
+  /*Body*/
+
     .p1{
       display: none;
     }
@@ -8,7 +10,8 @@
       width: 600px;
     }
     
-    /*Guests*/
+  /*Guests*/
+
     .entrevistas{
       margin-top: -10%;
     }
@@ -18,7 +21,7 @@
       width: 50%
     }
   
-    /*Topics*/
+  /*Topics*/
   
     .tit3{
       width: 85%;
@@ -32,7 +35,7 @@
       width: 50%;
     }
 
-    /*Foot*/
+  /*News*/
   
     .novedades{
       padding: 4% 4% 4% 4%;
