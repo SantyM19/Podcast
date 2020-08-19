@@ -1,0 +1,43 @@
+@media (min-width: 600px) and (max-width:900px){
+    .p1{
+      display: none;
+    }
+    .p2{
+      display: block;
+      width: 600px;
+    }
+    
+    /*invitados*/
+    .inv{
+      display: inline-block;
+      width: 50%
+    }
+  
+    /*topicos*/
+  
+    .tit3{
+      width: 85%;
+    }
+  
+    .topics{
+      flex-direction: row;
+    }
+  
+    .topic{
+      width: 50%;
+    }
+  
+    .novedades{
+      padding: 4% 4% 4% 4%;
+    }
+  
+    .nove{
+      width: 300px;
+      padding: 0%;
+    }
+  
+    .entrevistas{
+      margin-top: -10%;
+    }
+  
+  }
