@@ -1,30 +1,35 @@
-/*Variables*/
+/*Roots*/
 :root {
-  --color: #0000FF;
-  --hover:linear-gradient(225deg, #0000FF 0%, cyan 100%);
+  /*Colors*/
+    --color: #0000FF;
+    --hover:linear-gradient(225deg, #0000FF 0%, cyan 100%);
+  /*padding*/
+    --padd:0% 4%;
+  /*Tramsform skew*/
+   --skew:skew(0deg, 5deg);
 }
 
 body{
   width: 100%;
   margin: 0px;
+  padding: 0px;
   display: block;
   position: relative;
 }
 
-/*nav*/
+/*Nav*/
 .menu {
   font-family: 'IBM Plex Sans', sans-serif;
   display: block;
   position: sticky;
   top: 0;
+  z-index: 1;
   background-color: white;
   width: 100%;
 }
 
 .menu input[type="checkbox"], .menu .fa-bars, .menu .fa-times {
   position: absolute;  
-  margin: 0;
-  padding: 0;
   right: 4%;
   top: 5%;
   width: 30px;
@@ -41,7 +46,7 @@ body{
   height: 30px;
 }
 
-/*menu amburguesa*/
+/*Burguer Menu*/
 .menu .fa-bars, .menu .fa-times {
   font-size: 30px;
   pointer-events: none;
@@ -65,7 +70,7 @@ body{
 .menu input:not(:checked) ~ .fa-times {
   display: none;
 }
-/*end burguermenu*/
+/*End BurguerMenu*/
 
 .item{
   width: 100%;
@@ -90,14 +95,14 @@ body{
   text-decoration: line-through;
 }
 
-/*cuerpo*/
+/*Body*/
 .cuerpo{
   display: block;
   width: 100%;
 }
-/*begin*/
+/*Begin*/
 .begin{
-  padding:0% 4%;
+  padding:var(--padd);
 }
 
 h1{
@@ -135,11 +140,11 @@ button:hover{
   background-image: var(--hover);
 }
 
-/*Episodios*/
+/*Episodes*/
 .episodios{
   position: static;
   transform: skew(0deg, -5deg);
-  padding: 0% 4%;
+  padding: var(--padd);
   background-color: var(--color);
   padding-top: 5%;
   padding-bottom: 15%;
@@ -150,13 +155,13 @@ h2{
 }
 
 .h2{
-  transform: skew(0deg, 5deg);
+  transform: var(--skew);
   padding-top: 3%;
   color: white;
 }
 
 .epi{
-  transform: skew(0deg, 5deg);
+  transform: var(--skew);
   margin-bottom: 5%;
 }
 
@@ -165,9 +170,9 @@ h2{
   margin-top: 1%;
 }
 
-/*nosotros*/
+/*Us*/
 .nosotros{
-  padding: 0% 4%;
+  padding: var(--padd);
   display: flex;
   flex-direction: column;
   text-align: justify;
@@ -189,7 +194,7 @@ h2{
   text-align: left;
 }
 
-/*invitados*/
+/*Guests*/
 .entrevistas{
   display: inline-block;
   margin-top: -20%;
@@ -212,7 +217,7 @@ h2{
   margin: 0px;
 }
 
-/*topicos*/
+/*Topics*/
 .topicos{
   display: flex;
   flex-direction: column;
@@ -242,7 +247,7 @@ h3{
   font-family: 'IBM Plex Mono', monospace;
 }
 
-/*footer*/
+/*Foot*/
 .foot{
   margin-top: 1%;
   transform: skewy(-5deg);
@@ -252,7 +257,7 @@ h3{
 }
 
 .novedades{
-  transform: skew(0deg, 5deg);
+  transform: var(--skew);
   text-align: center;
   padding: 3% 4% 3% 4%;
 }
@@ -264,7 +269,7 @@ h3{
 }
 
 
-/*footer*/
+/*Footer*/
 footer {
   background-color: white;
   text-align: center;
