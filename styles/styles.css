@@ -1,11 +1,11 @@
-/*Roots*/
+/*----  Roots  -----------------------------------------------------------*/
 :root {
-  /*Colors*/
+  /*----  Colors  ----*/
     --color: #0000FF;
     --hover:linear-gradient(225deg, #0000FF 0%, cyan 100%);
-  /*padding*/
+  /*----  Padding  ----*/
     --padd:0% 4%;
-  /*Tramsform skew*/
+  /*----  Tramsform skew  ----*/
     --skew:skew(0deg, 5deg);
 }
 
@@ -17,7 +17,7 @@ body{
   position: relative;
 }
 
-/*Nav*/
+/*----  Header  -----------------------------------------------------------*/
   header {
     font-family: 'IBM Plex Sans', sans-serif;
     display: block;
@@ -46,7 +46,7 @@ body{
     height: 30px;
   }
 
-/*Burguer Menu*/
+/*----  Burguer Menu  ----------------------------------------------------*/
   header .fa-bars, header .fa-times {
     font-size: 30px;
     pointer-events: none;
@@ -70,7 +70,7 @@ body{
   header input:not(:checked) ~ .fa-times {
     display: none;
   }
-  /*End BurguerMenu*/
+  /*----  End BurguerMenu  ----*/
 
   .item{
     width: 100%;
@@ -95,12 +95,12 @@ body{
     text-decoration: line-through;
   }
 
-/*Body*/
+/*----  Main  -----------------------------------------------------------*/
   main{
     display: block;
     width: 100%;
   }
-/*Begin*/
+/*----  Begin  ----*/
   .begin{
     padding:var(--padd);
   }
@@ -141,8 +141,8 @@ body{
     background-image: var(--hover);
   }
 
-/*Episodes*/
-  .episodios{
+/*----  Episodes  ----*/
+  .episodes{
     position: static;
     transform: skew(0deg, -5deg);
     padding: var(--padd);
@@ -161,7 +161,7 @@ body{
     color: white;
   }
 
-  .epi{
+  .episode{
     transform: var(--skew);
     margin-bottom: 5%;
   }
@@ -171,8 +171,8 @@ body{
     margin-top: 1%;
   }
 
-/*Us*/
-  .nosotros{
+/*----  Us  ----*/
+  .us{
     padding: var(--padd);
     display: flex;
     flex-direction: column;
@@ -185,46 +185,46 @@ body{
     width: 100%;
   }
 
-  .tit{
+  .title{
     color: black;
     width: 140px;
     text-align: left;
   }
 
-  .nos{
+  .about{
     text-align: left;
   }
 
-/*Guests*/
-  .entrevistas{
+/*----  Guests  ----*/
+  .interviews{
     display: inline-block;
     margin-top: -20%;
   }
 
-  .tit1{
+  .title1{
     margin: 3% 4%;
     width: 150px;
     color: black;
   }
 
-  .invitados{
+  .guests{
     font-size: 0px;
     line-height: 0px;
   }
 
-  .inv{
+  .guest{
     display: block;
     width: 100%;
     margin: 0px;
   }
 
-/*Topics*/
+/*----  Topics  ----*/
   .topicos{
     display: flex;
     flex-direction: column;
   }
 
-  .tit3{
+  .title3{
     color: black;
     margin: 3% 4%;
     width: 200px;
@@ -248,7 +248,7 @@ body{
     font-family: 'IBM Plex Mono', monospace;
   }
 
-/*News*/
+/*----  News  ----*/
   .news{
     margin-top: 1%;
     transform: skewy(-5deg);
@@ -257,19 +257,19 @@ body{
     display: block;
   }
 
-  .novedades{
+  .novelty{
     transform: var(--skew);
     text-align: center;     
     padding: 3% 4% 3% 4%;
   }
 
-  .nove{
+  .new{
     margin: auto;
     width: 200px;
     color: white; 
   }
 
-/*Footer*/
+/*----  Footer  -----------------------------------------------------------*/
 
   footer {
     background-color: white;
@@ -283,7 +283,7 @@ body{
     width: 100%;
   }
 
-  .rede{
+  .social{
     width: 80%;
     margin: auto;
     display: flex;
@@ -291,7 +291,7 @@ body{
     padding-bottom: 2%;
   }
 
-  .aa{
+  .icons{
     width: 5%;
     display: inline-block;
   }

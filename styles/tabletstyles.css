@@ -1,6 +1,6 @@
 @media (min-width: 600px) and (max-width:900px){
   
-  /*Body*/
+  /*----  Main∫  -----------------------------------------------------------*/
 
     .p1{
       display: none;
@@ -10,20 +10,20 @@
       width: 600px;
     }
     
-  /*Guests*/
+  /*----  Guests  ----*/
 
-    .entrevistas{
+    .interviews{
       margin-top: -10%;
     }
 
-    .inv{
+    .guest{
       display: inline-block;
       width: 50%
     }
   
-  /*Topics*/
+  /*----  Topics  ----*/
   
-    .tit3{
+    .title3{
       width: 85%;
     }
   
@@ -35,13 +35,13 @@
       width: 50%;
     }
 
-  /*News*/
+  /*----  News  ----*/
   
-    .novedades{
+    .novelty{
       padding: 4% 4% 4% 4%;
     }
   
-    .nove{
+    .new{
       width: 300px;
       padding: 0%;
     }
