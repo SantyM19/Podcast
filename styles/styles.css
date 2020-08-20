@@ -96,7 +96,7 @@ body{
   }
 
 /*Body*/
-  .cuerpo{
+  main{
     display: block;
     width: 100%;
   }
@@ -249,7 +249,7 @@ body{
   }
 
 /*News*/
-  .foot{
+  .news{
     margin-top: 1%;
     transform: skewy(-5deg);
     background-color: var(--color);
