@@ -18,7 +18,7 @@ body{
 }
 
 /*Nav*/
-  .menu {
+  header {
     font-family: 'IBM Plex Sans', sans-serif;
     display: block;
     position: sticky;
@@ -28,7 +28,7 @@ body{
     width: 100%;
   }
 
-  .menu input[type="checkbox"], .menu .fa-bars, .menu .fa-times {
+  header input[type="checkbox"], header .fa-bars, header .fa-times {
     position: absolute;  
     right: 4%;
     top: 5%;
@@ -47,27 +47,27 @@ body{
   }
 
 /*Burguer Menu*/
-  .menu .fa-bars, .menu .fa-times {
+  header .fa-bars, header .fa-times {
     font-size: 30px;
     pointer-events: none;
   }
  
-  .menu input[type="checkbox"] {
+  header input[type="checkbox"] {
     opacity: 0; 
   }   
-  .menu nav {
+  header nav {
     display: none;
   }
  
-  .menu input:checked ~ nav {
+  header input:checked ~ nav {
     display: block;
   }
  
-  .menu input:checked ~ .fa-bars {
+  header input:checked ~ .fa-bars {
     display: none;
   }
  
-  .menu input:not(:checked) ~ .fa-times {
+  header input:not(:checked) ~ .fa-times {
     display: none;
   }
   /*End BurguerMenu*/
